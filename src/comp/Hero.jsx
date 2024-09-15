@@ -23,7 +23,7 @@ export const Hero = () => {
                         const updateUsers = usermodf.filter((usr) => usr._id !== user._id)
                         setUserModf(updateUsers);
                     } else {
-                        alert('not done yet')
+                        alert('not done yet, try again')
                     }
                 })
         }
