@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
             {
             path:'/',
             element:<Hero />,
-            loader: async ()=> await fetch("http://localhost:4000/users/"),
+            loader: async ()=> await fetch("https://usersstore.vercel.app/users/"),
         },
         {
             path:'/add',
@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
         {
             path:'/update-user/:id',
             element:<UpdateUser />,
-            loader: async ({params})=> await fetch(`http://localhost:4000/users/${params.id}`),
+            loader: async ({params})=> await fetch(`https://usersstore.vercel.app/users/${params.id}`),
         },
     ]
     }

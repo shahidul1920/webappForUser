@@ -15,7 +15,7 @@ export const UpdateUser = () => {
     }
     const userUpd =(e)=>{
         e.preventDefault();
-        fetch(`http://localhost:4000/users/${mainUser._id}`,{
+        fetch(`https://usersstore.vercel.app/users/${mainUser._id}`,{
             method:"PUT",
             headers:{
                 'content-type' : 'application/json',

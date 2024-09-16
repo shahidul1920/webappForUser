@@ -11,7 +11,7 @@ export const Hero = () => {
         const askAlert = window.confirm(`Are you sure that ${user.name} should get fucked?`)
 
         if (askAlert) {
-            fetch(`http://localhost:4000/users/${user._id}`, {
+            fetch(`https://usersstore.vercel.app/users/${user._id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())

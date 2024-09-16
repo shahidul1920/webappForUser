@@ -13,7 +13,7 @@ export const AddUser = () => {
             mail,
             age
         }
-        fetch("http://localhost:4000/users/", {
+        fetch("https://usersstore.vercel.app/users/", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
